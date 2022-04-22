@@ -1,0 +1,297 @@
+/*************** ESTILOS GENERALES ***************/
+
+*, *:before, *:after{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html{
+	box-sizing: border-box;
+}
+
+:root{
+	--verdePrincipal: rgb(6, 152, 87);
+	--verdeFuerte: rgb(7, 152, 87);
+}
+
+.contenedor{
+	max-width: 1200px;
+	margin: 3rem auto;
+}
+
+body{
+	font-size: 1.2rem;
+}
+
+p{
+	margin-bottom: 0;
+}
+
+h1{
+	text-align: center;
+	padding-top: 1.5rem;
+	color: rgb(6, 152, 87);
+	font-weight: 700;
+	text-shadow: 0px 1px 3px black;
+	font-size: 3.5rem;
+}
+
+h2{
+	padding: 1rem;
+	text-shadow: 0px 1px 3px black;
+	color: #fff;
+	font-size: 2.8rem;
+}
+
+h3{
+	padding: 1rem;
+	color: #fff;
+	margin-bottom: 0;
+	text-shadow: 0px 1px 5px black;
+}
+
+.I{
+	color:#28a745;
+}
+
+.sano{
+	background-color: #28a745;
+}
+
+.II{
+	color:#ffc107;
+}
+
+.riesgo{
+	background-color:#ffc107;
+}
+
+.III{
+	color:#dc3545;
+}
+
+.enfermo{
+	background-color: #dc3545;
+}
+
+.IV{
+	color:#007bff;
+}
+
+.discapacitado{
+	background-color: #007bff;
+}
+
+.negro{
+	color: black;
+	font-weight: bold;
+}
+
+/*************** ESTILOS CUERPO PAGINAS ***************/
+
+.imagen-fondo{
+	background-image: url('../img/medicos.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding-bottom: 1rem;
+}
+
+/*************** ESTILOS A INPUTS Y SELECTS ***************/
+input, select{
+	width: 100%;
+	height: calc(1.5em + 0.75rem + 2px);
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	box-shadow: 1px 1px 3px black;
+}
+
+input:focus{
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem #0b8327;
+}
+
+.form-container{
+	border-radius: 1rem;
+	background-color: rgba(6, 152, 87, .8);
+	color: #fff;
+}
+
+.campos-container{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.campos-container .campo{
+	flex: 0 0 calc(25% - 1rem);
+	margin: .5rem;
+}
+
+.btn{
+	box-shadow: 1px 1px 3px black;
+}
+
+.btn:focus{
+	box-shadow: none;
+}
+
+.btn-borrar{
+	border: none;
+	background: transparent;
+}
+
+.btn-borrar:hover{
+	cursor: pointer;
+}
+
+.div-button button{
+	padding: .5rem 2rem;
+	font-weight: bold;
+	letter-spacing: .1rem;
+	margin: 1rem .5rem ;
+}
+
+.campo-agregar-editar{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: .5rem;
+}
+
+/*************** ESTILOS DEL GRID ***************/
+
+.column-1{
+	flex: 0 0 calc(8.33% - 1rem);
+}
+
+.column-2{
+	flex: 0  calc(16.66% - 1rem);
+}
+
+.column-3{
+	flex: 0 0 calc(25% - 1rem);
+}
+.column-4{
+	flex: 0 0 calc(33.33% - 1rem);
+}
+.column-5{
+	flex: 0 0 calc(41.66% - 1rem);
+}
+.column-6{
+	flex: 0 0 calc(50% - 1rem);
+}
+.column-7{
+	flex: 0 0 calc(58.33% - 1rem);
+}
+.column-8{
+	flex: 0 0 calc(66.66% - 1rem);
+}
+.column-9{
+	flex: 0 0 calc(75% - 1rem);
+}
+.column-10{
+	flex: 0 0 calc(83.33% - 1rem);
+}
+.column-11{
+	flex: 0 0 calc(91.66% - 1rem);
+}
+.column-12{
+	flex: 0 0 calc(100% - 1rem);
+}
+
+.leyenda-tabla{
+	margin-top: .5rem;
+	margin-bottom: 3rem;
+}
+
+.leyenda-tabla .row{
+	display: flex;
+}
+
+.leyenda-tabla legend{
+	margin: 0 .5rem .5rem 1rem;
+	font-weight: bold;
+}
+
+.leyenda-tabla p{
+	margin: .25rem 2rem;
+	font-size: 1.1rem;
+}
+
+.leyenda-tabla p span{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+@media (max-width: 1024px){
+	
+	#tabla{
+		font-size: 1rem;
+	}
+
+}
+
+.icono-editar-eliminar{
+	font-size: 1.3rem;
+	color: #000;
+}
+
+
+.header-buscar-pag{
+	border-radius: 10px;
+}
+
+/*ESTILOS DEL FOOTER*/
+footer{
+	display: flex;
+	justify-content: space-between;
+	font-size: 80%;
+	padding: 2rem;
+	background-color: #28a745;
+	color: #fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.notificacion{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem 3rem;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.visible{
+    opacity: 1;
+}
+
+.correcto{
+    background-color: rgb(179, 241, 117);
+    color: green;
+}
+
+.error{
+    background: rgb(238, 148, 166);
+    color: rgb(163, 0, 33);
+}
+
+.sombra{
+    box-shadow: 0 2px 9px 0px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 2px 9px 0px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 2px 9px 0px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
